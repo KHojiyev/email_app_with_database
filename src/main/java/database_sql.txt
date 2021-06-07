@@ -1,0 +1,16 @@
+CREATE SEQUENCE public.users_user_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.users_user_id_seq OWNER TO "Khojiyev_admin";
+
+--
+-- Name: users_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: Khojiyev_admin
+--
+
+ALTER SEQUENCE public.users_user_id_seq OWNED BY public.users.user_id;
